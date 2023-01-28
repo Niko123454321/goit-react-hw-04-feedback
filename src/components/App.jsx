@@ -32,7 +32,14 @@ export class App extends React.Component {
     const total = this.counterTotalFeadback();
 
     return (
-      <>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
@@ -52,7 +59,7 @@ export class App extends React.Component {
             />
           )}
         </Section>
-      </>
+      </div>
     );
   }
 }
